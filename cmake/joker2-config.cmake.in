@@ -1,0 +1,54 @@
+# joker2 CMake config file
+#
+# This file sets the following variables:
+# joker2_FOUND - Always TRUE.
+# joker2_INCLUDE_DIRS - Directories containing the joker2 include files.
+# joker2_IDL_DIRS - Directories containing the joker2 IDL files.
+# joker2_LIBRARIES - Libraries needed to use joker2.
+# joker2_DEFINITIONS - Compiler flags for joker2.
+# joker2_VERSION - The version of joker2 found.
+# joker2_VERSION_MAJOR - The major version of joker2 found.
+# joker2_VERSION_MINOR - The minor version of joker2 found.
+# joker2_VERSION_REVISION - The revision version of joker2 found.
+# joker2_VERSION_CANDIDATE - The candidate version of joker2 found.
+
+message(STATUS "Found joker2-@PROJECT_VERSION@")
+set(joker2_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(joker2_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(joker2_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(joker2_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(joker2_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(joker2_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(joker2_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(joker2_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(joker2_VERSION @PROJECT_VERSION@)
+set(joker2_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(joker2_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(joker2_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(joker2_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

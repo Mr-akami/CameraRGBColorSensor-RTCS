@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{483EEA40-907F-46B2-98B6-5FC36736902B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Users/shun/workspace/RTM/joker2 -BD:/Users/shun/workspace/RTM/joker2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Users/shun/workspace/RTM/joker2/build/CMakeFiles/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindDoxygen.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\OpenCVConfig.cmake;C:\Program Files (x86)\OpenRTM-aist\1.1\cmake\OpenRTMConfig.cmake;D:\Users\shun\workspace\RTM\joker2\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCPlatform.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCXXCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCXXPlatform.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeRCCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeSystem.cmake;D:\Users\shun\workspace\RTM\joker2\build\cpack_options.cmake;D:\Users\shun\workspace\RTM\joker2\cmake\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\cmake\cpack_options.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2-config-version.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2-config.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2.pc.in;D:\Users\shun\workspace\RTM\joker2\cmake\uninstall_target.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\utils.cmake;D:\Users\shun\workspace\RTM\joker2\cmake\wix.xsl.in;D:\Users\shun\workspace\RTM\joker2\doc\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\doc\doxyfile.in;D:\Users\shun\workspace\RTM\joker2\idl\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\include\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\include\joker2\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\cmake\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\doc\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\idl\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\include\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\include\joker2\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\src\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Users/shun/workspace/RTM/joker2 -BD:/Users/shun/workspace/RTM/joker2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Users/shun/workspace/RTM/joker2/build/CMakeFiles/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindDoxygen.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\OpenCVConfig.cmake;C:\Program Files (x86)\OpenRTM-aist\1.1\cmake\OpenRTMConfig.cmake;D:\Users\shun\workspace\RTM\joker2\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCPlatform.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCXXCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCXXPlatform.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeRCCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeSystem.cmake;D:\Users\shun\workspace\RTM\joker2\build\cpack_options.cmake;D:\Users\shun\workspace\RTM\joker2\cmake\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\cmake\cpack_options.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2-config-version.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2-config.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2.pc.in;D:\Users\shun\workspace\RTM\joker2\cmake\uninstall_target.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\utils.cmake;D:\Users\shun\workspace\RTM\joker2\cmake\wix.xsl.in;D:\Users\shun\workspace\RTM\joker2\doc\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\doc\doxyfile.in;D:\Users\shun\workspace\RTM\joker2\idl\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\include\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\include\joker2\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\cmake\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\doc\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\idl\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\include\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\include\joker2\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\src\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Users/shun/workspace/RTM/joker2 -BD:/Users/shun/workspace/RTM/joker2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Users/shun/workspace/RTM/joker2/build/CMakeFiles/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindDoxygen.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\OpenCVConfig.cmake;C:\Program Files (x86)\OpenRTM-aist\1.1\cmake\OpenRTMConfig.cmake;D:\Users\shun\workspace\RTM\joker2\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCPlatform.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCXXCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCXXPlatform.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeRCCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeSystem.cmake;D:\Users\shun\workspace\RTM\joker2\build\cpack_options.cmake;D:\Users\shun\workspace\RTM\joker2\cmake\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\cmake\cpack_options.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2-config-version.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2-config.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2.pc.in;D:\Users\shun\workspace\RTM\joker2\cmake\uninstall_target.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\utils.cmake;D:\Users\shun\workspace\RTM\joker2\cmake\wix.xsl.in;D:\Users\shun\workspace\RTM\joker2\doc\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\doc\doxyfile.in;D:\Users\shun\workspace\RTM\joker2\idl\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\include\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\include\joker2\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\cmake\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\doc\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\idl\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\include\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\include\joker2\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\src\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Users/shun/workspace/RTM/joker2 -BD:/Users/shun/workspace/RTM/joker2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Users/shun/workspace/RTM/joker2/build/CMakeFiles/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindDoxygen.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\OpenCVConfig.cmake;C:\Program Files (x86)\OpenRTM-aist\1.1\cmake\OpenRTMConfig.cmake;D:\Users\shun\workspace\RTM\joker2\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCPlatform.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCXXCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeCXXPlatform.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeRCCompiler.cmake;D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\CMakeSystem.cmake;D:\Users\shun\workspace\RTM\joker2\build\cpack_options.cmake;D:\Users\shun\workspace\RTM\joker2\cmake\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\cmake\cpack_options.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2-config-version.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2-config.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\joker2.pc.in;D:\Users\shun\workspace\RTM\joker2\cmake\uninstall_target.cmake.in;D:\Users\shun\workspace\RTM\joker2\cmake\utils.cmake;D:\Users\shun\workspace\RTM\joker2\cmake\wix.xsl.in;D:\Users\shun\workspace\RTM\joker2\doc\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\doc\doxyfile.in;D:\Users\shun\workspace\RTM\joker2\idl\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\include\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\include\joker2\CMakeLists.txt;D:\Users\shun\workspace\RTM\joker2\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\cmake\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\doc\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\idl\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\include\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\include\joker2\CMakeFiles\generate.stamp;D:\Users\shun\workspace\RTM\joker2\build\src\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\ZERO_CHECK.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Users/shun/workspace/RTM/joker2/build/CMakeFiles/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\ZERO_CHECK</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Users/shun/workspace/RTM/joker2/build/CMakeFiles/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\ZERO_CHECK</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Users/shun/workspace/RTM/joker2/build/CMakeFiles/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\ZERO_CHECK</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Users/shun/workspace/RTM/joker2/build/CMakeFiles/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\ZERO_CHECK</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Users\shun\workspace\RTM\joker2\build\CMakeFiles\ZERO_CHECK" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
