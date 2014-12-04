@@ -1,4 +1,4 @@
 CameraRGBColorSensor-RTCS
 =========================
 
-RT-Middleware Component (RTC) . This show RGB value from camera image
+RT-Middleware Component (RTC) . This shows RGB value from camera image
